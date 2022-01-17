@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Register</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <h1 class="form-title">Register</h1>
+        <p class="form-desc">
+          Create your account. It`s free and only takes a minute.
+        </p>
+        <form class="form-body" action="" method="get">
+          <div class="form-item-name">
+            <input
+              type="text"
+              name="first-name"
+              class="form-input form-input-name"
+              placeholder=" First name"
+            />
+            <input
+              type="text"
+              name="first-name"
+              class="form-input form-input-name"
+              placeholder=" Last name"
+            />
+          </div>
+          <div class="form-item">
+            <input
+              type="text"
+              name="email"
+              class="form-input"
+              placeholder=" Email"
+            />
+            <input
+              type="password"
+              name="password"
+              class="form-input"
+              placeholder=" Password"
+            />
+            <input
+              type="password"
+              name="password"
+              class="form-input"
+              placeholder=" Confirm Password"
+            />
+          </div>
+          <div class="form-item">
+            <div class="checkbox">
+              <input checked type="checkbox" name="agreement" class="checkbox-input"/>
+              <label for="formAgreement" class="checkbox-label">I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a> .</label>
+            </div>
+          </div>
+          <button type="submit" class="form-button">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
+
