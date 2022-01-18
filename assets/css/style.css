@@ -33,7 +33,31 @@ body {
 .form-title {
   font-size: 30px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.form-title::before {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: var(--second-color);
+  position: absolute;
+  top: 30%;
+  left: 0;
+  margin: 5px;
+}
+
+.form-title::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: var(--second-color);
+  position: absolute;
+  top: 30%;
+  right: 0;
+  margin: 5px;
 }
 
 .form-desc {
@@ -75,17 +99,27 @@ body {
 
 .checkbox {
   display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+
 }
 .checkbox-input {
-  display: none;
+  margin-right: 15px;
+  position: absolute;
+  top: 25px;
+  left: 0;
 }
 
 .checkbox-label {
   font-size: 16px;
   line-height: 140%;
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 15px;
+  margin: 25px;
   position: relative;
   cursor: pointer;
 }
@@ -137,4 +171,9 @@ body {
 
 .form-button:active {
   box-shadow: 0 1px 0 rgb(19, 19, 19);
+}
+
+.form-item-text {
+  display: flex;
+  flex-wrap: wrap;
 }
