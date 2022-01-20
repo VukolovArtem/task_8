@@ -11,7 +11,7 @@
   <body>
     <div class="wrapper">
       <div class="form">
-        <h1 class="form-title">Register</h1>
+        <h1 class="form-title"><span>Register</spa></h1>
         <p class="form-desc">
           Create your account. It`s free and only takes a minute.
         </p>
@@ -22,12 +22,16 @@
               name="first-name"
               class="form-input form-input-name"
               placeholder=" First name"
+              pattern="^[A-Z][a-z]{2,10}$"
+              required
             />
             <input
               type="text"
               name="first-name"
               class="form-input form-input-name"
               placeholder=" Last name"
+              pattern="^[A-Z][a-z]{2,10}$"
+              required
             />
           </div>
           <div class="form-item">
@@ -36,18 +40,24 @@
               name="email"
               class="form-input"
               placeholder=" Email"
+              pattern="^[A-Za-z0-9_-]{3,32}@[a-z]{2,10}\.[a-z]{1,5}$"
+              required
             />
             <input
               type="password"
               name="password"
               class="form-input"
               placeholder=" Password"
+              pattern="^(?=.*?[A-Z])(?=.*?[0-9]).{3,16}$"
+              required
             />
             <input
               type="password"
               name="password"
               class="form-input"
               placeholder=" Confirm Password"
+              pattern="^(?=.*?[A-Z])(?=.*?[0-9]).{3,16}$"
+              required
             />
           </div>
           <div class="form-item-text">
@@ -57,6 +67,7 @@
                 type="checkbox"
                 name="agreement"
                 class="checkbox-input"
+                required
               />
               <label for="formAgreement" class="checkbox-label"
                 >I accept the <a href="#">Terms of Use</a> &
